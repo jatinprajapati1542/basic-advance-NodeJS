@@ -1,0 +1,15 @@
+<%- include('header') %>
+        <div class="row mb-5">
+            <div class="col">
+                <form action="/submit" method="post">
+                    Enter Name : <input type="text" name="name" ><br><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col bg-success mb-5">
+                <%= message %>
+            </div>
+        </div>
+        <%- include('footer') %>

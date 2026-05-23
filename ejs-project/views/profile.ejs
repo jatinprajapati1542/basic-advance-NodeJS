@@ -1,0 +1,18 @@
+<%- include('header') %>
+        <div class="col-6">
+            <div >
+                <table class="table">
+            <% items.forEach(item=> { %>
+            <tr>
+                <td><%=  item.name  _%></td>
+                <td><%=  item.age  _%></td>
+                <td><%=  item.city  _%></td>
+            </tr>
+            <% }) %>
+        </table>
+            </div>
+        </div>
+        <div class="col-6">
+            
+        </div>
+<%- include('footer') %>
