@@ -13,7 +13,7 @@ app.set("view engine", "ejs")
 // variables
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './public')
+        cb(null, './public' /* enter location where you store */)
     },
     filename: (req, file, cb) => {
         let filename = Date.now() + path.extname(file.originalname)
